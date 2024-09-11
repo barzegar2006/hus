@@ -1,0 +1,234 @@
+.bannerImg{
+    filter: brightness(50%);
+    position: relative;
+}
+.cardBlack{
+    position: absolute;
+    top: 30%;
+    left: 6%;
+    vertical-align: middle;
+    background-color: black;
+    width: 45%;
+    padding: 5.5rem;
+}
+.borderTop{
+    border-top: 2px solid #FF0000;
+    width: 35%;
+}
+.number{
+    font-size: 300px;
+}
+.text-h{
+    font-size: 55px;
+}
+.loremEXP{
+    text-wrap: wrap;
+    padding: 2rem 0;
+}
+.imgEXP{
+    position: relative;
+    background-image: url(../assets/exp_bg.png.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 544px;
+    padding: 13rem;
+    margin: 3rem;
+}
+.aboutEXP{
+    position: absolute;
+    left: 0;
+    left: 20px;
+    top: 20px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #000;
+    mix-blend-mode: screen;
+}
+.Realestate{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+.textStyle{
+    font-size: 48px;
+    font-weight: 500;
+    color: #303030;
+    position: relative;
+    z-index: 0;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 0px;
+    line-height: 58px;
+}
+.textEXP{
+    width: 47%;
+}
+.iconTick{
+    color: #ff0000;
+    margin: 10px;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+    .cardBlack {
+        width: 50%;
+        padding: 4rem;
+        margin-top: 4rem;
+    }
+
+    .bannerImg{
+        height: 555px;
+    }
+
+    .text-h {
+        font-size: 38px;
+    }
+
+    button{
+        padding: 0.6rem 1rem !important;
+    }
+
+    .textStyle {
+        font-size: 34px;
+    }
+
+    .imgEXP {
+        padding: 9rem;
+        margin: 2rem;
+        height: 450px;
+    }
+
+    .number{
+        font-size: 200px;
+    }
+
+    .textEXP {
+        width: 50%;
+        margin: 0;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .cardBlack {
+        width: 50%;
+        padding: 3rem;
+    }
+
+    .text-h {
+        font-size: 25px;
+    }
+
+    .textStyle {
+        font-size: 25px;
+        display: inline;
+    }
+
+    .firstLorem{
+        margin-top: 1rem !important;
+    }
+
+    .imgEXP {
+        text-align: center;
+        width: 90%;
+        height: 520px;
+    }
+
+    .textEXP{
+        margin-left: 40px;
+    }
+
+    .number{
+        font-size: 270px;
+    }
+
+    .Realestate {
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .cardBlack {
+        width: 70%;
+        padding: 5rem;
+        left: 18%;
+    }
+
+    .firstLorem{
+        font-size: 14px !important;
+    }
+
+    .text-h {
+        font-size: 20px;
+    }
+
+    .number{
+        font-size: 100px;
+    }
+    
+    .textStyle {
+        font-size: 18px;
+    }
+    
+    .loremEXP{
+        font-size: 13px !important;
+        padding-top: 0.4rem;
+    }
+
+    .imgEXP {
+        width: 70%;
+        margin: 0 auto;
+        height: 200px;
+    }
+    
+    .textEXP {
+        font-size: 13px;
+        padding: 2rem 0 0 4rem;
+    }
+
+    .iconTick {
+        font-size: 17px;
+    }
+
+    .counter{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+    .boxCounter{
+        padding: 1rem 3rem;
+        margin: 0 !important;
+    }
+    .textFacilities{
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .cardBlack {
+        width: 90%;
+        padding: 3rem;
+        left: 5%;
+    }
+    .imgEXP {
+        width: 100%;
+        margin: 0 auto;
+        height: 200px;
+    }
+    .textEXP {
+        width: 90%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+}

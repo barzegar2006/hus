@@ -1,0 +1,83 @@
+.contactUS {
+    margin-top: 10rem;
+    position: relative;
+}
+
+.imgBackContact img {
+    width: 50%;
+    height: 600px;
+    
+}
+
+.contact {
+    width: 80%;
+    height: 450px;
+    background-color: #fff;
+    opacity: 90%;
+    z-index: 1000;
+    position: absolute;
+    top: 90px;
+    left: 90px;
+    display: flex;
+    justify-content: space-around;
+}
+.textContactUS{
+    padding-top: 5rem;
+
+}
+.textQuestions{
+    padding-bottom: 2rem;
+}
+.numberPhone{
+    color: #FF0000;
+    font-size: 35px;
+}
+.phone{
+    display: flex;
+    align-items: center;
+}
+.iconPhone{
+    color: #FF0000;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 50%;
+    border: 1px solid gainsboro;
+    margin: 0 20px;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 992px) {
+    .contact {
+        padding: 3rem;
+    }
+    .numberPhone{
+        font-size: 25px;
+    }
+    .titleQuestions{
+        font-size: 25px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact{
+        flex-direction: column;
+    }
+    .phone{
+        margin: 1rem 0;
+    }
+    .iconPhone{
+        margin: 0 20px 0 0;
+    }
+}
+@media (max-width: 500px) {
+    .textContactUS{
+        padding: 0;
+    }
+}

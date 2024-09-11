@@ -1,0 +1,90 @@
+.backContact{
+    background-image: url(../assets/bradcam.png.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.backContact h2{
+    color: #fff;
+    font-size: 55px;
+    margin: auto 0;
+}
+.textContact{
+    padding: 8rem 2rem;
+} 
+.int1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.int1 input{
+    width: 47%;
+    border: none;
+    border: 1px solid #e4e4e4;
+    outline: none;
+}
+.form{
+    width: 100%;
+    padding: 6rem 6rem 0 6rem;
+    color: #dbdbdb;
+    font-size: 12px;
+}
+.intSubject{
+    width: 100%;
+    border: 1px solid #e4e4e4;
+}
+textarea{
+    border: 1px solid #e4e4e4;
+    width: 100%;
+}
+.form input , .btnSubmit{
+    margin: 1rem 0;
+    padding: 1rem;
+}
+.btnSubmit{
+    padding: 0.8rem 1.3rem;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+    font-size: 12px;
+}
+.inpForm{
+    padding: 14px 0 0 14px;
+    outline: none;
+}
+.pageContact{
+    display: flex;
+    justify-content: space-around;
+}
+.contactInfo{
+    width: 30%;
+    padding: 5rem 1rem;
+}
+.contactForm{
+    width: 65%;
+}
+.iconContactInfo{
+    width: 25px;
+    font-size: 33px;
+    color: #a1a1a1;
+    margin: 0 1rem;
+}
+.itemContactInfo{
+    margin: 1.2rem 0;
+    align-items: center;
+}
+@media (max-width: 992px) {
+    .pageContact{
+        flex-direction: column;
+    }
+    .contactForm{
+        width: 95%;
+        margin: 0 auto;
+    }
+    .contactInfo{
+        margin: 0 0 0 6rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 80%;
+    }
+}

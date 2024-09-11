@@ -1,52 +1,54 @@
-import React from 'react'
-
-import { CURRENTLINE, CYAN, RED, YELLOW } from '../helpers/color'
-import { Link } from 'react-router-dom'
+import "../StyleSheets/Contact.css"
 
 
-//  از تمامی اطلاعات کاربر اونایی که نام برده شد را نشان میدهد
-const Contact = ({contact , confirmDelete}) => {
+const Contact = () => {
     return (
-        <>
-            <div className="col-md-6 card mt-5" style={{ backgroundColor: CURRENTLINE }}>
-                <div className="card-body ">
-                    <div className="row align-items-center justify-content-around">
-                        <div className="col-md-3">
-                            <img src={contact.photo || "https://placehold.co/150"} alt="" style={{width:"150px" , height:"150px"}}/>
+        <div>
+            <div className='backContact'>
+                <div className='textContact'>
+                    <h2>Contact</h2>
+                </div>
+            </div>
+            <div>
+                <div className="pageContact">
+                    <div className="contactForm">
+                        <form className="form">
+                <p className="fs-3 mb-3 text-dark fw-bold">Get in Touch</p>
+                            <p> <textarea name="" className="inpForm" cols={70} rows={9} id="" placeholder="Enter Message"></textarea> </p>
+                            <div className="int1">
+                                <input type="text" placeholder="Enter your name" className="inpForm" />
+                                <input type="email" placeholder="Email" className="inpForm" />
+                            </div>
+                            <input type="text" className="intSubject inpForm" placeholder="Enter Subject" />
+                            <p><button type="submit" className="btnSubmit">SEND</button></p>
+                        </form>
+                    </div>
+                    <div className="contactInfo">
+                        <div className="d-flex itemContactInfo">
+                            <div><i className="fa fa-home iconContactInfo"></i></div>
+                            <div>
+                                <span>Buttonwood, California.</span>
+                                <p className="text-secondary">Rosemead, CA 91770</p>
+                            </div>
                         </div>
-                        <div className="col-md-6 p-2">
-
-                            <div className="list-group my-1">
-                                <div className="list-group-item list-group-item-dark">
-                                    نام و نام خانوادگی :
-                                    <span className='fw-bold'> {contact.fullname} </span>
-                                </div>
+                        <div className="d-flex itemContactInfo">
+                            <div><i className="fa fa-tablet iconContactInfo"></i></div>
+                            <div>
+                                <span>+1 253 565 2365</span>
+                                <p className="text-secondary">Mon to Fri 9am to 6pm</p>
                             </div>
-
-                            <div className="list-group my-1">
-                                <div className="list-group-item list-group-item-dark">
-                                    شماره تلفن :
-                                    <span className='fw-bold'>{contact.mobile}</span>
-                                </div>
-                            </div>
-
-                            <div className="list-group my-1">
-                                <div className="list-group-item list-group-item-dark">
-                                    ایمیل:
-                                    <span className='fw-bold'>{contact.email}</span>
-                                </div>
-                            </div>
-
                         </div>
-                        <div className="col-md-1 ">
-                            <Link to={contact.id} className='btn my-1' style={{ backgroundColor: YELLOW }}><i className='fa fa-eye'></i></Link>
-                            <Link to={`edit/${contact.id}`} className='btn my-1' style={{ backgroundColor: CYAN }}><i className='fa fa-pencil'></i></Link>
-                            <button className='btn my-1' onClick={confirmDelete} style={{ backgroundColor: RED }}><i className='fa fa-trash'></i></button>
+                        <div className="d-flex itemContactInfo">
+                            <div><i className="fa fa-envelope-o	 iconContactInfo"></i></div>
+                            <div>
+                                <span>support@colorlib.com</span>
+                                <p className="text-secondary">Send us your query anytime!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

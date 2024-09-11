@@ -1,0 +1,99 @@
+.Facilities {
+    background-image: url(../assets//about_bg.png.jpg);
+    position: relative;
+}
+
+.textFacilities {
+    font-size: 48px;
+    padding: 10rem;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    mix-blend-mode: screen;
+    z-index: 3;
+}
+
+.cardItems {
+    display: flex;
+    width: 34%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #fff;
+    margin: 0 1rem;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+}
+
+.cardItems:hover {
+    border: 1px solid #ff2424;
+}
+
+.icon {
+    width: 40%;
+}
+
+.learn {
+    font-size: 12px;
+    cursor: pointer;
+    color: #ff2424;
+    border-bottom: 1px solid gray;
+    z-index: 2;
+}
+
+.hadset {
+    width: 30%;
+}
+
+.items {
+    position: absolute;
+    top: 20rem;
+}
+
+
+
+
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+    .items {
+        flex-wrap: wrap;
+        margin: 0 3.2rem;
+    }
+
+    .cardItems {
+        width: 45%;
+    }
+
+    .cardItemsEnd {
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .items {
+        flex-wrap: wrap;
+    }
+    
+    .cardItems {
+        margin: 10px auto;
+        width: 80%;
+    }
+}
+@media (max-width: 500px) {
+    .textFacilities{
+        font-size: 37px;
+        width: 100%;
+        padding: 10rem 0;
+    }
+    .cardItems {
+        margin: 10px auto;
+        font-size: 13px;
+        width: 100%;
+    }
+    .items{
+        top: 15rem;
+    }
+}

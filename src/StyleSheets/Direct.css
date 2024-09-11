@@ -1,0 +1,48 @@
+.direct{
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.direct img{
+    padding: 1rem;
+}
+.textDirect{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 3rem;
+}
+.point{
+    display: inline-block;
+    margin: 2px;
+    font-size: 12px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: gainsboro;
+    cursor: pointer;
+}
+.pointActive{
+    background-color: #282828;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 992px) {
+    .direct{
+        margin-top: 5rem;
+    }
+    .textDirect{
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+
+}
